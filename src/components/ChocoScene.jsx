@@ -5,7 +5,7 @@ import { products } from '../data/products';
 import { imagePlane } from './loadTex';
 import { createFloaters } from './FloatingObjects';
 
-export default function ChocoScene({ index, onReady }) {
+export default function ChocoScene({ index }) {
   const mount = useRef(null);
   const S = useRef(null); // shared state between the two effects below
 
@@ -69,8 +69,7 @@ export default function ChocoScene({ index, onReady }) {
     ro.observe(el);
 
     // first product drops in from the top
-    const launch = setTimeout(() => { items[0].target = 0; }, 1300);
-    requestAnimationFrame(() => onReady && onReady());
+    const launch = setTimeout(() => { items[0].target = 0; }, 300);
 
     // ---------- animation loop (runs every frame) ----------
     const clock = new THREE.Clock();

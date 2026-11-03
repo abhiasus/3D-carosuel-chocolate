@@ -92,3 +92,4 @@ button { font: inherit; color: inherit; border: 0; cursor: pointer; }
   .controls { margin-top: 16px; gap: 12px; }
   .neu.round { width: 48px; height: 48px; }
   .dots { margin-top: 16px; }
+}
